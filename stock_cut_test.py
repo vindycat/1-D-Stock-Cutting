@@ -67,8 +67,8 @@ for i in (new_patterns):
         b_t = np.transpose(b)
         w = np.dot(s,(L - np.dot(b_t,l)))
         print("Total waste: {}".format(w))
-        #solution matrix corresponds to each row in pattern matrix
-        #each row represents a pattern from the length matrix
+        #solution matrix represnts the number of patterns in each row the corresponding pattern matrix
+        #pattern matrix represents the cutting pattern of the length matrix
         print(s) #solution matrix
         print(b_t) #pattern matrix
-        print(l)
+        print(l) #length matrix
